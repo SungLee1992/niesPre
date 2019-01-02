@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'ArialMT', 'Arial';*/
+  font-family: 'Arial', 'PingFang SC';
+  font-size: 14px;
+  /*font-weight: bold;*/
+}
+
+body, html, #app {
+  min-width: 1150px !important;
+  /*width: 100%;*/
+  height: 100%;
+  background-color: #f6f6f6;
+  text-align: center;
+}
