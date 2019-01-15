@@ -119,6 +119,8 @@ export default {
         this.tableObj[type].total = response.data.data.total;
       }, error => {
         this.tableObj[type].loading = false;
+		this.tableObj[type].list = response.data.data.data;
+        this.tableObj[type].total = response.data.data.total;
         this.$message.error("请求数据异常，请检查");
         console.log(error);
       });

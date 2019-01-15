@@ -74,7 +74,7 @@
         </template>
       </el-table-column>
     </el-table-column>
-    <el-table-column v-if="isForecast" label="预测值" align="center" width="90">
+    <el-table-column v-if="isForecast" key="newPre" label="预测值" align="center" width="90">
       <template slot-scope="scope">
         <span v-if="scope.row.preValue === '0'">I</span>
         <span v-if="scope.row.preValue === '1'">A</span>
@@ -113,7 +113,7 @@ export default {
   props: {
     loading: true,
     tableData: null,
-    isForecast: false,
+    isForecast: true,
     type: null
   },
   methods: {}
