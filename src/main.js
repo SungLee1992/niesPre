@@ -13,9 +13,10 @@ Vue.use(ElementUI);
 Vue.prototype.$axios = axios;
 Vue.prototype.$qs = qs;
 Vue.config.productionTip = false;
-//axios.defaults.baseURL = "http://localhost:80/toxicitypred/";		//如果nginx做转发或负载均衡，此处URL要改为Nginx服务器的地址和端口号
-axios.defaults.baseURL = "/";
-//axios.defaults.baseURL = "http://localhost:80/";
+//如果nginx做转发或负载均衡，此处URL要改为Nginx服务器的地址和端口号
+//axios.defaults.baseURL = "http://localhost:80/toxicitypred/";		//tomcat部署
+axios.defaults.baseURL = "/";										//nginx部署
+//axios.defaults.baseURL = "http://localhost:80/";					//dev开发
 axios.defaults.headers = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
 };
